@@ -1,0 +1,396 @@
+.nav
+  display: block
+  &-desine
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+  &-lang
+    text-align: right
+    &__button
+      color: #2754e6
+      font-family: "Futura Book C"
+      font-size: 26px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: normal
+      padding: 10px
+      border: none
+      background-color: transparent
+  &__link
+    text-decoration: none
+    color: inherit
+  &__list
+    list-style: none
+    display: flex
+    align-items: center
+    color: #2754e6
+    font-family: "Futura Book C"
+    font-size: 27px
+    font-weight: 400
+    font-style: normal
+    margin-right: 128px
+    margin-bottom: 0
+    padding: 0
+  &__item
+    &:not(:last-child)
+      margin-right: 48px
+  &-acc
+    &__button
+      color: #2754e6
+      font-weight: 400
+      padding: 4px 18px
+      border-radius: 15px
+      box-shadow: 0 0 7px 1px rgba(177, 6, 205, 0.75)
+      background-color: #fff
+      border: 4px solid #2543e4
+      &:last-child
+        margin-left: 67px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &-mobile
+    display: none
+    margin-left: 30px
+    &__line
+      display: inline-block
+      height: 6px
+      width: 30px
+      box-shadow: 0 0 7px 1px rgba(177, 6, 205, 0.75)
+      background-color: transparent
+      border: 2px solid #2543e4
+      margin-bottom: 2px
+      border-radius: 8px
+
+.main
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  padding-top: 150px
+  &__title
+    color: #2754e6
+    font-family: "Circular Std"
+    font-size: 71px
+    font-weight: 700
+    margin-bottom: 51px
+  &__description
+    color: #000000
+    font-family: "Futura Book C"
+    font-size: 48px
+    font-weight: 400
+    margin-bottom: 55px
+    max-width: 964px
+  &__button
+    color: #ffffff
+    font-family: "Futura Book C"
+    font-size: 31px
+    font-weight: bold
+    font-style: normal
+    padding: 18px 42px
+    background-color: #2754e6
+    border: none
+    border-radius: 25px
+    margin-bottom: 132px
+  &-icons
+    &__img
+      &:not(:last-child)
+        margin-right: 35px
+  &-image
+    position: relative
+    z-index: -1
+    &__first
+      position: absolute
+      top: -112px
+      left: 100%
+      transform: translateX(-91%)
+    &__title
+      position: absolute
+      top: -188px
+      left: -56px
+      transform: translateX(-91%)
+.about
+  position: relative
+  padding-bottom: 50px
+  &__title
+    color: #2a2a2a
+    font-family: "Helvetica Neue Cyr"
+    font-size: 57px
+    font-weight: 700
+    text-align: center
+    margin-bottom: 95px
+  &-blocks
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 90px
+    &-evenly
+      justify-content: space-evenly
+  &-block
+    position: relative
+    max-width: 330px
+    text-align: center
+    &:nth-child(2)
+      & .about
+        &-block
+          &__description
+            max-width: 311px
+          &__line
+            &-one
+              margin-left: 86px
+            &-two
+              margin-left: 125px
+          &__img
+            width: 126px
+    &:nth-child(3)
+      max-width: 351px
+      & .about
+        &-block
+          &__description
+            max-width: 309px
+          &__line
+            &-one
+              margin-left: 186px
+            &-two
+              margin-left: 252px
+    &__title
+      position: relative
+      color: #2a2a2a
+      font-family: "Helvetica Neue Cyr"
+      font-size: 27px
+      font-weight: 700
+      margin-bottom: 0
+    &__description
+      color: #2a2a2a
+      font-family: "Futura Book C"
+      font-size: 19px
+      font-weight: 400
+      font-style: normal
+      text-align: center
+      max-width: 291px
+      margin: auto
+    &__img
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 150px
+      &--large
+        width: 260px
+    &__line
+      &-one
+        background-color: #1c3ee4
+        width: 129px
+        height: 5px
+        display: block
+        margin-left: 28px
+        margin-top: 5px
+      &-two
+        background-color: #0896db
+        margin-bottom: 18px
+        width: 100px
+        height: 3px
+        display: inline-block
+.desine
+  &-about
+    position: absolute
+    left: -26%
+    top: 36%
+    transform: rotate(155deg)
+    width: 549px
+    height: 484px
+    object-fit: cover
+    z-index: -1
+  &-statistics
+    position: absolute
+    right: -21%
+    top: 0
+    transform: rotate(155deg)
+    object-fit: cover
+    z-index: -1
+.statistics
+  position: relative
+  &__title
+    font-family: "Helvetica Neue Cyr"
+    font-size: 31px
+    font-weight: 700
+    font-style: normal
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 40px
+    &-large
+      font-family: "Circular Std"
+      font-size: 36px
+      display: block
+  &-elem
+    box-shadow: 5px 8px 12px 1px rgba(0, 0, 0, 0.19)
+    background-color: #f5fdff
+    padding: 12px 20px
+    border-radius: 25px
+    &__text
+      color: #2a2a2a
+      font-family: "DIN Condensed"
+      font-size: 32px
+      font-weight: 700
+      font-style: normal
+  &__blocks
+    &--square
+      max-width: 388px
+.tariff
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 110px
+  padding-top: 45px
+  &-card
+    padding: 30px
+    border: 1px solid #221ee0
+  &-cards
+    margin-bottom: 70px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    gap: 70px
+    grid-template-areas: "card card card-2 card-2 card-3 card-3" "card-4 card-4 card-4 card-5 card-5 card-5"
+  &__title
+    color: #010101
+    font-family: "Helvetica Neue Cyr"
+    font-size: 58px
+    font-weight: 700
+    font-style: normal
+    margin-bottom: 50px
+  &__garant
+    font-size: 30px
+    color: #000
+    font-size: 20px
+    font-family: "Futura Book C"
+    text-transform: uppercase
+.card
+  display: flex
+  flex-direction: column
+  border-radius: 1.30rem
+  width: 390px
+  text-align: center
+  text-transform: uppercase
+  &:nth-child(1)
+    grid-area: card
+  &:nth-child(2)
+    grid-area: card-2
+    margin-left: auto
+    margin-right: auto
+  &:nth-child(3)
+    grid-area: card-3
+    margin-left: auto
+    margin-right: 0
+  &:nth-child(4)
+    grid-area: card-4
+    margin-right: 0
+    margin-left: auto
+  &:nth-child(5)
+    grid-area: card-5
+  &__list
+    list-style: none
+    padding: 0
+    text-align: left
+  &__item
+    color: #000000
+    font-family: "Futura Book C"
+    font-size: 15px
+    font-weight: 400
+    font-style: normal
+    margin-bottom: 6px
+    &--number
+      font-size: 18px
+      font-weight: bold
+  &__title
+    color: #000000
+    font-family: "Circular Std"
+    font-size: 36px
+    font-weight: 500
+    font-style: normal
+    margin-bottom: 10px
+  &__rate
+    color: #000000
+    font-family: 'Circular Spotify Text'
+    font-size: 60px
+    font-weight: 400
+    font-style: normal
+    line-height: 60px
+  &__inf
+    color: #000000
+    font-family: "Futura Book C"
+    font-size: 21px
+    font-weight: bold
+    font-style: normal
+    margin-bottom: 15px
+  &__button
+    padding: 8px 80px
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translate(-50%, 50%)
+    font-size: 20px
+    color: #fff
+    text-transform: uppercase
+    font-family: "Futura Book C"
+    background-color: #1E42F6
+    border: none
+    border-radius: 35px
+.try
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  &__title
+    color: #2a2a2a
+    font-size: 45px
+    margin-bottom: 45px
+  &__image
+    width: 46px
+    height: 52px
+    position: absolute
+    top: 50%
+    top: 26%
+    left: calc(50% - 180px)
+  &__now
+    font-size: 44px
+    font-family: "Futura Book C"
+    color: #000
+    transform: rotate(-7deg)
+    display: inline-block
+    margin-bottom: 50px
+  &__button
+    padding: 8px 24px
+    font-size: 40px
+    color: #fff
+    background-color: #1E42F6
+    border-radius: 30px
+    border: none
+  &__arrow
+    margin-left: 15px
+  &__desine
+    top: -27%
+    width: 450px
+    height: 420px
+    transform: rotate(168deg)
+    left: -12%
+    position: absolute
+.footer
+  position: relative
+  padding-top: 120px
+  color: #000000
+  padding-bottom: 70px
+  font-size: 26px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-style: italic
+  &__lang
+    display: flex
+    align-items: center
+    &-item:first-child
+      margin-right: 20px
+  &__desine
+    bottom: 0
+    right: -38%
+    position: absolute

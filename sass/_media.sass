@@ -1,0 +1,396 @@
+@media (min-width: 1500px)
+  .container
+    max-width: 90%
+@media (max-width: 1800px)
+  .main
+    padding-top: 90px
+    &-image
+      &__first
+        width: 500px
+        top: -70px
+      &__title
+        width: 430px
+        object-fit: cover
+        top: -48px
+        left: -74px
+    &__title
+      font-size: 55px
+      margin-bottom: 18px
+    &__description
+      margin-bottom: 66px
+      font-size: 35px
+      max-width: 770px
+    &__button
+      margin-bottom: 75px
+      font-size: 28px
+  .nav
+    &__list
+      font-size: 22px
+      margin-right: 40px
+    &-lang
+      margin-bottom: 25px
+  .desine
+    &-about
+      left: -40%
+    &-statistics
+      right: -50%
+  .about
+    padding-bottom: 15px
+    &__title
+      font-size: 35px
+      margin-bottom: 65px
+    &-block
+      &__title
+        font-size: 24px
+      &__description
+        font-size: 17px
+    &-blocks
+      margin-bottom: 70px
+  .statistics
+    &-elem
+      &__text
+        font-size: 24px
+  .tariff
+    &__title
+      font-size: 35px
+  .card
+    width: 326px
+    &__title
+      font-size: 24px
+    &__rate
+      font-size: 28px
+      line-height: 35px
+    &__inf
+      font-size: 18px
+      margin-bottom: 10px
+    &__item
+      font-size: 13px
+      margin-bottom: 4px
+      &--number
+        font-size: 16px
+  .try
+    &__desine
+      left: -26%
+    &__title
+      font-size: 35px
+    &__now
+      font-size: 35px
+    &__button
+      font-size: 30px
+
+  .footer
+    font-size: 20px
+    &__desine
+      right: -42%
+@media (max-width: 1200px)
+  .main
+    padding-bottom: 26px
+    &__title
+      font-size: 42px
+    &__description
+      font-size: 28px
+      max-width: 500px
+      margin-bottom: 35px
+    &-icons
+      &__img
+        width: 70px
+        height: 90px
+        object-fit: cover
+    &__button
+      padding: 11px 47px
+      font-size: 22px
+  .nav
+    &__item
+      &:not(:last-child)
+        margin-right: 30px
+  .about
+    padding-bottom: 30px
+    &__title
+      font-size: 28px
+      margin-bottom: 50px
+    &-block
+      &__title
+        font-size: 21px
+      &__desciption
+        font-size: 16px
+      &__img--large
+        width: 209px
+      &:nth-child(3)
+        max-width: 296px
+        & .about-block__line-one
+          margin-left: 120px
+        & .about-block__line-two
+          margin-left: 150px
+    &-blocks
+      flex-wrap: wrap
+      gap: 25px
+      justify-content: space-evenly
+      margin-bottom: 25px
+  .statistics
+    &__title
+      font-size: 24px
+      &-large
+        font-size: 27px
+    &__blocks
+      max-width: 300px
+    &-elem
+      &__text
+        font-size: 18px
+  .desine
+    &-about
+      width: 440px
+      height: 379px
+      left: -50%
+      top: 26px
+  .tariff
+    &-cards
+      width: 100%
+      gap: 50px
+      grid-template-columns: 1fr 1fr
+      grid-template-areas: "card card-2" "card-3 card-3" "card-4 card-5"
+  .card
+    margin: 0 auto
+    &:nth-child(3)
+      margin-right: auto
+    &:nth-child(4)
+      margin-right: auto
+  .footer
+    &__desine
+      right: -50%
+  .desine
+    &-statistics
+      right: -62%
+@media (max-width: 991px)
+  .nav
+    &-menu
+      display: none
+    &-mobile
+      display: flex
+      flex-direction: column
+      border: none
+      background-color: transparent
+    &-desine
+      width: 199px
+  .main
+    padding-top: 50px
+    &-image
+      &__first
+        width: 350px
+        top: 40px
+      &__title
+        width: 330px
+        top: 40px
+        left: -43px
+    &__title
+      font-size: 32px
+    &__description
+      font-size: 20px
+      max-width: 420px
+    &__button
+      font-size: 18px
+      margin-bottom: 45px
+    &-icons
+      &__img
+        width: 27px
+        height: 31px
+        width: 65px
+        height: 56px
+        &:not(:last-child)
+          margin-right: 15px
+  .desine
+    &-statistics
+      width: 400px
+      right: -29%
+  .tariff
+    &__garant
+      text-align: center
+      font-size: 18px
+  .try
+    &__desine
+      left: -47%
+  .footer
+    font-size: 14px
+    &__desine
+      right: -73%
+@media (max-width: 767px)
+  .main
+    &-image
+      &__first
+        top: 70px
+        width: 250px
+      &__title
+        top: 70px
+        width: 233px
+        left: -34px
+  .about
+    &__title
+      font-size: 24px
+      margin-bottom: 40px
+    &-block
+      max-width: 100%
+      &__wrapper
+        width: 100%
+      &__title
+        font-size: 18px
+        text-align: left
+      &__description
+        max-width: 100%
+        font-size: 14px
+        text-align: left
+      &__img
+        width: 80px
+        &--large
+          width: 100px
+      &:nth-child(2)
+        & .about-block__img
+          width: 80px
+      &:nth-child(2) .about-block__description
+        max-width: 100%
+      &:nth-child(3)
+        max-width: 100%
+        & .about-block__description
+          max-width: 100%
+      &__line
+        &-one
+          margin-left: 0 !important
+        &-two
+          margin-left: -250px
+          margin-bottom: 16px
+      &:nth-child(2) .about-block__line-two
+        margin-left: -250px
+      &:nth-child(3) .about-block__line-two
+        margin-left: -250px
+  .statistics
+    &__title
+      font-size: 20px
+      &-large
+        font-size: 22px
+    &-elem
+      &__text
+        font-size: 14px
+        margin-bottom: 5px
+  .tariff
+    margin-bottom: 55px
+    &-cards
+      grid-template-columns: 1fr
+      grid-template-areas: "card" "card-2" "card-3" "card-4" "card-5"
+    &__title
+      font-size: 22px
+      margin-bottom: 25px
+  .card
+    width: 90%
+    max-width: 360px
+  .desine
+    &-about
+      width: 334px
+      height: 289px
+      left: -69%
+  .try
+    &__desine
+      width: 227px
+      object-fit: contain
+      left: -30%
+    &__title
+      font-size: 28px
+    &__now
+      margin-bottom: 37px
+      font-size: 28px
+    &__arrow
+      height: 15px
+    &__button
+      font-size: 26px
+  .footer
+    padding-bottom: 25px
+    padding-top: 90px
+    &__desine
+      width: 217px
+      right: -33%
+      bottom: 97px
+@media (max-width: 575px)
+  .container
+    width: 380px
+  .nav
+    padding-top: 30px
+    display: flex
+    flex-direction: column
+    &-wrapper
+      order: -1
+    &-lang
+      margin-bottom: 0
+      margin-left: 81px
+      margin-right: auto
+      &__button
+        font-size: 16px
+    &-acc
+      &__button
+        &:last-child
+          margin-left: 10px
+  .main
+    &-image
+      &__first
+        top: 95px
+        width: 150px
+      &__title
+        top: 110px
+        width: 100px
+    &__title
+      font-size: 30px
+  .card
+    &__item
+      font-size: 12px
+  .desine
+    &-statistics
+      right: -69%
+    &-about
+      left: -72%
+      top: 70px
+      width: 268px
+      height: 230px
+  .about
+    &-block
+      &__line
+        &-one
+        &-two
+          margin-left: -120px
+      &:nth-child(2) .about-block__line-two
+        margin-left: -120px
+      &:nth-child(3) .about-block__line-two
+        margin-left: -120px
+  .tariff
+    &__garant
+      font-size: 14px
+  .try
+    &__title
+      font-size: 20px
+    &__desine
+      top: -46%
+      left: -33%
+      width: 150px
+    &__image
+      left: calc(50% - 140px)
+    &__button
+      font-size: 20px
+  .footer
+    font-size: 10px
+    &__desine
+      width: 160px
+      bottom: 55px
+@media (max-width: 380px)
+  .container
+    width: 310px
+  .desine
+    &-about
+      display: none
+  .adout
+    &-block
+      &__line-two
+        margin-left: -70px
+.about
+  &-block
+    &__line
+      &-two
+        margin-left: -55px
+    &:nth-child(2) .about-block__line-two
+      margin-left: -55px
+    &:nth-child(3) .about-block__line-two
+      margin-left: -55px
