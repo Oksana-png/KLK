@@ -247,11 +247,7 @@
     border: 1px solid #221ee0
   &-cards
     margin-bottom: 70px
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
-    grid-template-rows: 1fr 1fr
-    gap: 70px
-    grid-template-areas: "card card card-2 card-2 card-3 card-3" "card-4 card-4 card-4 card-5 card-5 card-5"
+
   &__title
     color: #010101
     font-family: "Helvetica Neue Cyr"
@@ -265,6 +261,13 @@
     font-size: 20px
     font-family: "Futura Book C"
     text-transform: uppercase
+.swiper
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    gap: 70px
+    grid-template-areas: "card card card-2 card-2 card-3 card-3" "card-4 card-4 card-4 card-5 card-5 card-5"
 .card
   display: flex
   flex-direction: column
@@ -272,22 +275,25 @@
   width: 390px
   text-align: center
   text-transform: uppercase
-  &:nth-child(1)
-    grid-area: card
-  &:nth-child(2)
-    grid-area: card-2
-    margin-left: auto
-    margin-right: auto
-  &:nth-child(3)
-    grid-area: card-3
-    margin-left: auto
+  // &:nth-child(1)
+  //   grid-area: card
+  // &:nth-child(2)
+  //   grid-area: card-2
+  //   margin-left: auto
+  //   margin-right: auto
+  // &:nth-child(3)
+  //   grid-area: card-3
+  //   margin-left: auto
+  //   margin-right: 0
+  // &:nth-child(4)
+  //   grid-area: card-4
+  //   margin-right: 0
+  //   margin-left: auto
+  // &:nth-child(5)
+  //   grid-area: card-5
+  &-4
     margin-right: 0
-  &:nth-child(4)
-    grid-area: card-4
-    margin-right: 0
     margin-left: auto
-  &:nth-child(5)
-    grid-area: card-5
   &__list
     list-style: none
     padding: 0
@@ -394,3 +400,21 @@
     bottom: 0
     right: -38%
     position: absolute
+.swiper
+  &-slide
+    &:nth-child(1)
+      grid-area: card
+    &:nth-child(2)
+      grid-area: card-2
+      margin-left: auto
+      margin-right: auto
+    &:nth-child(3)
+      grid-area: card-3
+      margin-left: auto
+      margin-right: 0
+    &:nth-child(4)
+      grid-area: card-4
+      margin-right: 0
+      margin-left: auto
+    &:nth-child(5)
+      grid-area: card-5

@@ -145,6 +145,8 @@
   .tariff
     &-cards
       width: 100%
+  .swiper
+    &-wrapper
       gap: 50px
       grid-template-columns: 1fr 1fr
       grid-template-areas: "card card-2" "card-3 card-3" "card-4 card-5"
@@ -224,8 +226,9 @@
         left: -34px
   .about
     &__title
-      font-size: 24px
+      font-size: 25px
       margin-bottom: 40px
+      text-align: left
     &-block
       max-width: 100%
       &__wrapper
@@ -306,6 +309,15 @@
       width: 217px
       right: -33%
       bottom: 97px
+  .swiper
+    &-initialized
+      height: 520px
+      overflow: hidden
+    &-wrapper
+      display: flex
+      gap: 0
+    &-slide
+      width: 100%
 @media (max-width: 575px)
   .container
     width: 380px
@@ -348,14 +360,36 @@
       height: 230px
   .about
     &-block
+      display: flex
+      flex-direction: column
+      &-l
+        & .about-block__line-two
+          margin-left: -105px
       &__line
-        &-one
         &-two
-          margin-left: -120px
-      &:nth-child(2) .about-block__line-two
-        margin-left: -120px
-      &:nth-child(3) .about-block__line-two
-        margin-left: -120px
+          margin-left: 70px
+      &:nth-child(2)
+        & .about-block__line-two
+          margin-left: -105px
+        & .about-block__img
+          width: 50px
+      &:nth-child(3)
+        & .about-block__line-two
+          margin-left: 70px
+        & .about-block__img
+          width: 50px
+      &__img
+        position: static
+        order: -1
+        left: 0
+        margin-bottom: 15px
+        width: 50px
+        transform: translate(0)
+    &-blocks
+      &-evenly
+        & .about-block:nth-child(2)
+          & .about-block__line-two
+            margin-left: 70px
   .tariff
     &__garant
       font-size: 14px
@@ -371,26 +405,54 @@
     &__button
       font-size: 20px
   .footer
-    font-size: 10px
+    font-size: 9px
     &__desine
       width: 160px
       bottom: 55px
 @media (max-width: 380px)
   .container
     width: 310px
+  .nav
+    &-acc
+      &__button
+        font-size: 12px
+  .main
+    &__title
+      font-size: 24px
+    &__description
+      font-size: 16px
+      margin-bottom: 125px
   .desine
     &-about
       display: none
+  .tariff
+    &-cards
+      margin-bottom: 0px
   .adout
     &-block
       &__line-two
         margin-left: -70px
-.about
-  &-block
-    &__line
-      &-two
+  .about
+    &-block
+      &-l
+        & .about-block__line-two
+          margin-left: -50px
+      &__line
+        &-two
+          margin-left: -55px
+      &:nth-child(2) .about-block__line-two
         margin-left: -55px
-    &:nth-child(2) .about-block__line-two
-      margin-left: -55px
-    &:nth-child(3) .about-block__line-two
-      margin-left: -55px
+      &:nth-child(3) .about-block__line-two
+        margin-left: 60px
+    &-blocks
+      &-evenly
+        & .about-block:nth-child(1)
+          & .about-block__line-two
+            margin-left: 70px
+  .card
+    &__item
+      font-size: 11px
+    &__inf
+      font-size: 16px
+    &__button
+      padding: 4px 54px
